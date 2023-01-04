@@ -1,3 +1,4 @@
+
 function gerar() {
     var num = document.getElementById('numero')
     var res = document.getElementById('res')
@@ -13,6 +14,9 @@ function gerar() {
     var n10 = document.getElementById('10')
     if (num.value.length == 0) {
         window.alert('Insira algum valor')
+    }
+    else if (num.value.length == 7){
+        window.alert('insira menos caracteres limite (7)')
     }
     else{
         num = Number(num.value)
@@ -56,4 +60,3 @@ function gerar() {
         }
     }
 }
-
